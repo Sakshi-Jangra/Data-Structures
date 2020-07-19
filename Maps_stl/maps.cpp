@@ -19,6 +19,7 @@ int main()
 {
     map<int,int> rollPresent;
     map<string,int> namePresent;
+    string name;
     cout << "Map created!" << endl;
 
     // inserting into map
@@ -28,10 +29,21 @@ int main()
 
     // iterative insert
     for(int i=4; i<10; i++)
-        rollPresent[i] = i*10;  // any of above three
+       rollPresent[i] = i*10;  // any of above three
+
+    cout<<"Give 10 names"<<endl;
+    for(int i=0; i<10; i++){
+           cin>>name;
+       namePresent[name] = i*10;
+    }
 
     // output map || traverse map || access map
     for(auto &ele : rollPresent){
+        cout<<ele.first<<"  "<<ele.second<<endl;
+    }
+    
+    // here elemets are stored alphabetically ordered
+    for(auto &ele : namePresent){
         cout<<ele.first<<"  "<<ele.second<<endl;
     }
     return 0;
