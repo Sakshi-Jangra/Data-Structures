@@ -1,3 +1,10 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
 #include <iostream>
 #include <map>
 #include <functional>
@@ -25,7 +32,7 @@ int main()
 
     // output map || traverse map || access map
     for(auto &ele : rollPresent){
-        cout<<ele.first<<ele.second;
+        cout<<ele.first<<"  "<<ele.second<<endl;
     }
     return 0;
 }
