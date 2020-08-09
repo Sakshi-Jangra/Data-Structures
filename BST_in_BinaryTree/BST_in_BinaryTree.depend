@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1597002569 source:c:\users\hp\documents\github\data-structures\bst_in_binarytree\main.cpp
+	<iostream>
+	<limits.h>
+
